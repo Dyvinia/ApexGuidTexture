@@ -35,7 +35,7 @@ namespace ApexGuidTexturePreprocess {
 
         private void ProcessRSON() {
             Mouse.OverrideCursor = Cursors.Wait;
-            string outputFile = inputDir + "\\Output\\output.json";
+            string outputFile = inputDir + "\\Output\\database.json";
             Directory.CreateDirectory(Path.GetDirectoryName(outputFile));
 
             Dictionary<string, string> guidDict = new Dictionary<string, string>();

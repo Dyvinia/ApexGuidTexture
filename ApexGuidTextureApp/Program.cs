@@ -11,7 +11,7 @@ namespace ApexGuidTextureApp {
     internal class Program {
         static void Main(string[] args) {
             string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string databaseName = "\\output.json";
+            string databaseName = "\\database.json";
             string folderName = "\\_images";
 
             bool missingFiles = false;
@@ -23,7 +23,13 @@ namespace ApexGuidTextureApp {
                 Console.WriteLine("Missing directory " + path + folderName);
                 missingFiles = true;
             }
-            if (missingFiles) return;
+            if (missingFiles) {
+                Console.WriteLine("");
+                Console.WriteLine("Press enter to close...");
+                Console.ReadLine();
+                return;
+            }
+                
 
             string json = File.ReadAllText(path + databaseName);
             var values = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
@@ -54,6 +60,10 @@ namespace ApexGuidTextureApp {
                     }
                 }
             }
+
+            Console.WriteLine("");
+            Console.WriteLine("Press enter to close...");
+            Console.ReadLine();
         }
     }
 }
