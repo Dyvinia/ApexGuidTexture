@@ -29,7 +29,6 @@ namespace ApexGuidTextureApp {
                 Console.ReadLine();
                 return;
             }
-                
 
             string json = File.ReadAllText(path + databaseName);
             var values = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);

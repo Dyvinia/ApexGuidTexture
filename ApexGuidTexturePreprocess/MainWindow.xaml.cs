@@ -35,6 +35,7 @@ namespace ApexGuidTexturePreprocess {
 
         private void ProcessRSON() {
             Mouse.OverrideCursor = Cursors.Wait;
+
             string outputFile = inputDir + "\\Output\\database.json";
             Directory.CreateDirectory(Path.GetDirectoryName(outputFile));
 
@@ -42,7 +43,6 @@ namespace ApexGuidTexturePreprocess {
 
             var files = Directory.EnumerateFiles(inputDir, "*.rson").ToList();
             int count = files.Count();
-            
 
             for (int i = 0; i < count; i++) {
                 TextStatus.Dispatcher.Invoke(() => TextStatus.Text = "Processing " + Path.GetFileName(files[i]), DispatcherPriority.Background);
@@ -51,7 +51,6 @@ namespace ApexGuidTexturePreprocess {
                 using (StreamReader openfile = File.OpenText(files[i])) {
                     string fileString = openfile.ReadToEnd();
                     fileString = fileString.Substring(fileString.IndexOf("memoryInfo"));
-
 
                     List<string> listGuid = new List<string>();
                     List<string> listPath = new List<string>();
