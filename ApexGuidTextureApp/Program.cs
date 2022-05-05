@@ -53,7 +53,7 @@ namespace ApexGuidTextureApp {
                         }
                         outValue = Path.GetFileNameWithoutExtension(outValue);
                         File.Move(files[i], files[i].Replace(fileGUID.ToLower(), outValue));
-                        Console.WriteLine($"Renaming {fileGUID.ToLower()} to {outValue}");
+                        Console.WriteLine($"Renaming {fileGUID.ToLower()}{Path.GetExtension(files[i])} to {outValue}{Path.GetExtension(files[i])}");
                     }
                     else {
                         Console.WriteLine("Missing Key " + fileGUID);

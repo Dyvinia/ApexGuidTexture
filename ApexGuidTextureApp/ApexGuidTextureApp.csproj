@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{985EB800-4838-415F-87D0-32C06781D0BB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ApexGuidTextureApp</RootNamespace>
-    <AssemblyName>ApexGuidTextureApp</AssemblyName>
+    <RootNamespace>ApexGuidTexture</RootNamespace>
+    <AssemblyName>ApexGuidTexture</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
