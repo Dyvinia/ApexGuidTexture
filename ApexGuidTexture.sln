@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexGuidTexturePreprocess", "ApexGuidTexturePreprocess\ApexGuidTexturePreprocess.csproj", "{2DA36C63-7BD4-404D-9E59-29E361346606}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApexGuidTextureApp", "ApexGuidTextureApp\ApexGuidTextureApp.csproj", "{985EB800-4838-415F-87D0-32C06781D0BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DA36C63-7BD4-404D-9E59-29E361346606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DA36C63-7BD4-404D-9E59-29E361346606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DA36C63-7BD4-404D-9E59-29E361346606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DA36C63-7BD4-404D-9E59-29E361346606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{985EB800-4838-415F-87D0-32C06781D0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{985EB800-4838-415F-87D0-32C06781D0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{985EB800-4838-415F-87D0-32C06781D0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{985EB800-4838-415F-87D0-32C06781D0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8661DD20-6149-425B-BCDA-AC5F66176FD8}
+	EndGlobalSection
+EndGlobal
