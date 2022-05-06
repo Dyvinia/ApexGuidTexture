@@ -15,7 +15,7 @@
         <Button x:Name="btn_inputselect" Content="Select..." Margin="0,40,92,0" Height="20" HorizontalAlignment="Right" Width="62" Click="btn_inputselect_Click" VerticalAlignment="Top"/>
         <Button x:Name="btn_inputopen" Content="Open" Margin="0,40,25,0" Height="20" HorizontalAlignment="Right" Width="62" Click="btn_inputopen_Click" VerticalAlignment="Top"/>
 
-        <Button x:Name="btn_run" Content="Process RSON" Height="40" Click="btn_run_Click" HorizontalAlignment="Center" Width="150" VerticalAlignment="Bottom" Margin="0,0,0,33"/>
+        <Button x:Name="btn_run" Content="Process RSON" Height="40" Click="btn_run_Click" HorizontalAlignment="Center" Width="150" VerticalAlignment="Bottom" Margin="0,0,0,34"/>
         <Grid VerticalAlignment="Bottom" Margin="0" Height="15">
             <TextBlock x:Name="TextStatus" Foreground="White" Margin="2,0,0,2" VerticalAlignment="Bottom"/>
             <TextBlock x:Name="TextNumber" Foreground="White" Margin="0,0,2,2" VerticalAlignment="Bottom" HorizontalAlignment="Right"/>
