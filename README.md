@@ -8,7 +8,7 @@ A tool to automatically rename texture files exported by Legion
 ## Instructions
 
 ### `ApexGuidTexture.zip`
-Extract the .zip and place the `ApexGuidTexture.exe` & `database.json` in the directory above `_images`. Launch the program normally.
+Extract the .zip and place the `ApexGuidTexture.exe` & `database.json` in the directory above `_images`. <br>Launch the program normally.
 
 Optional Commandline Arguments:
 
