@@ -13,8 +13,9 @@ namespace ApexGuidTexturePreprocess {
     /// </summary>
     public partial class App : Application {
         private void Application_DispatcherUnhandledException(object sender, DispatcherUnhandledExceptionEventArgs e) {
-            MessageBox.Show("Error" + Environment.NewLine + e.Exception.Message, "Error");
+            MessageBox.Show(e.Exception.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             e.Handled = true;
+            App.Current.Shutdown();
         }
     }
 }
