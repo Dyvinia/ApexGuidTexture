@@ -29,9 +29,19 @@ namespace ApexGuidTexturePreprocess {
 
         public MainWindow() {
             InitializeComponent();
-            txtb_inputpath.Text = inputDir;
+            LoadInputDir();
         }
 
+        private void LoadInputDir() {
+            inputDir = Properties.Settings.Default.savedInputDir;
+            txtb_inputpath.Text = inputDir;
+        }
+        
+        private void SaveInputDir() {
+            Properties.Settings.Default.savedInputDir = inputDir;
+            Properties.Settings.Default.Save();
+            txtb_inputpath.Text = inputDir;
+        }
 
         private void ProcessRSON() {
             Mouse.OverrideCursor = Cursors.Wait;
@@ -81,6 +91,7 @@ namespace ApexGuidTexturePreprocess {
             Mouse.OverrideCursor = null;
 
             MessageBox.Show("Finished", "Finished Generating", MessageBoxButton.OK, MessageBoxImage.Information);
+            Process.Start(Path.GetDirectoryName(outputFile));
         }
 
 
@@ -91,7 +102,7 @@ namespace ApexGuidTexturePreprocess {
             dialog.IsFolderPicker = true;
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok) {
                 inputDir = dialog.FileName;
-                txtb_inputpath.Text = inputDir;
+                SaveInputDir();
             }
         }
 

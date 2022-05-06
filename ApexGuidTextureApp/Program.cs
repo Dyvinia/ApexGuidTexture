@@ -30,8 +30,7 @@ namespace ApexGuidTextureApp {
                 return;
             }
 
-            string json = File.ReadAllText(path + databaseName);
-            var values = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+            Dictionary<string, string> values = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(path + databaseName));
 
             var files = Directory.EnumerateFiles(path + folderName).ToList();
             int count = files.Count();
