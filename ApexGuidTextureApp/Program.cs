@@ -10,9 +10,18 @@ using System.Threading.Tasks;
 namespace ApexGuidTextureApp {
     internal class Program {
         static void Main(string[] args) {
-            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string databaseName = "\\database.json";
-            string folderName = "\\_images";
+            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\";
+            string folderName = "_images";
+            string databaseName = "database.json";
+
+            if (args.Length == 1) {
+                path = "";
+                folderName = args[0];
+            } else if (args.Length == 2) {
+                path = "";
+                folderName = args[0];
+                databaseName = args[1];
+            }
 
             bool missingFiles = false;
             if (!File.Exists(path + databaseName)) {

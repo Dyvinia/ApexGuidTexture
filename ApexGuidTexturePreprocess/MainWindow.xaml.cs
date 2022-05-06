@@ -112,8 +112,8 @@ namespace ApexGuidTexturePreprocess {
 
         private void btn_run_Click(object sender, RoutedEventArgs e) {
             if (inputDir == null) {
-                string title = "Empty";
-                string message = "Empty";
+                string title = "Empty Folder";
+                string message = "Selected Folder is Empty";
                 MessageBox.Show(message, title, MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
