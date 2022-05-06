@@ -25,6 +25,7 @@ namespace ApexGuidTexturePreprocess {
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
+        public string assemblyDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         public string inputDir;
 
         public MainWindow() {
@@ -46,7 +47,7 @@ namespace ApexGuidTexturePreprocess {
         private void ProcessRSON() {
             Mouse.OverrideCursor = Cursors.Wait;
 
-            string outputFile = inputDir + "\\Output\\database.json";
+            string outputFile = assemblyDir + "\\Output\\database.json";
             Directory.CreateDirectory(Path.GetDirectoryName(outputFile));
 
             Dictionary<string, string> guidDict = new Dictionary<string, string>();
@@ -90,7 +91,7 @@ namespace ApexGuidTexturePreprocess {
             TextStatus.Text = "";
             Mouse.OverrideCursor = null;
 
-            MessageBox.Show("Finished", "Finished Generating", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Processing RSON files completed", "Completed", MessageBoxButton.OK, MessageBoxImage.Information);
             Process.Start(Path.GetDirectoryName(outputFile));
         }
 
@@ -112,9 +113,7 @@ namespace ApexGuidTexturePreprocess {
 
         private void btn_run_Click(object sender, RoutedEventArgs e) {
             if (inputDir == null) {
-                string title = "Empty Folder";
-                string message = "Selected Folder is Empty";
-                MessageBox.Show(message, title, MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Selected Folder is Empty", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
             ProcessRSON();

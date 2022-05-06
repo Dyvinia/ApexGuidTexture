@@ -10,7 +10,7 @@
         Style="{DynamicResource CustomWindowStyle}" Icon="Resources/luzavatar_nio_icon.ico"
         Title="Process RSON to JSON" Height="200" Width="550">
     <Grid Background="#FF141414">
-        <TextBlock Margin="26,14,25,0" TextWrapping="Wrap" Text="Folder" Foreground="#FFF1F1F1" FontSize="14" Height="20" FontWeight="Bold" VerticalAlignment="Top"/>
+        <TextBlock Margin="26,14,25,0" TextWrapping="Wrap" Text="RSON Folder" Foreground="#FFF1F1F1" FontSize="14" Height="20" FontWeight="Bold" VerticalAlignment="Top"/>
         <TextBox x:Name="txtb_inputpath" Height="20" Margin="25,40,159,0" TextWrapping="Wrap" Text="" Background="#FF141414" BorderBrush="#FF323232" Foreground="#FFF1F1F1" VerticalAlignment="Top" IsEnabled="False" VerticalScrollBarVisibility="Disabled"/>
         <Button x:Name="btn_inputselect" Content="Select..." Margin="0,40,92,0" Height="20" HorizontalAlignment="Right" Width="62" Click="btn_inputselect_Click" VerticalAlignment="Top"/>
         <Button x:Name="btn_inputopen" Content="Open" Margin="0,40,25,0" Height="20" HorizontalAlignment="Right" Width="62" Click="btn_inputopen_Click" VerticalAlignment="Top"/>
