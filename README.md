@@ -20,14 +20,14 @@ Optional Commandline Arguments:
     <h3><code>ApexGuidTexturePreprocess.exe</code></h3>
   </summary>
   <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Only needed if you plan on generating the database.json file yourself
+    &nbsp;&nbsp;&nbsp;&nbsp; Only needed if you plan on generating the database.json file yourself
   </p>
   <p>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Launch the program and select the folder with the RSON files.
+    &nbsp;&nbsp;&nbsp;&nbsp; Launch the program and select the folder with the RSON files.
     <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Click the <code>Process RSON</code> button to generate a <code>database.json</code> file
+    &nbsp;&nbsp;&nbsp;&nbsp; Click the <code>Process RSON</code> button to generate a <code>database.json</code> file
     <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The program will alert you when completed and open the output folder
+    &nbsp;&nbsp;&nbsp;&nbsp; The program will alert you when completed and open the output folder
   </p>
   
 </details>
