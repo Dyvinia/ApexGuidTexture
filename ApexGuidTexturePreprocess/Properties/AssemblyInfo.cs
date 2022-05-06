@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("ApexGuidTexturePreprocess")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[[assembly: AssemblyCompany("Dyvinia")]
+[assembly: AssemblyCompany("Dyvinia")]
 [assembly: AssemblyProduct("ApexGuidTexturePreprocess")]
 [assembly: AssemblyCopyright("Copyright © Dyvinia 2022")]
 [assembly: AssemblyTrademark("")]
