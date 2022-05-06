@@ -11,25 +11,23 @@ namespace ApexGuidTextureApp {
     internal class Program {
         static void Main(string[] args) {
             string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\";
-            string folderName = "_images";
-            string databaseName = "database.json";
+            string folderPath = path + "_images";
+            string databasePath = path + "database.json";
 
             if (args.Length == 1) {
-                path = "";
-                folderName = args[0];
+                folderPath = args[0];
             } else if (args.Length == 2) {
-                path = "";
-                folderName = args[0];
-                databaseName = args[1];
+                folderPath = args[0];
+                databasePath = args[1];
             }
 
             bool missingFiles = false;
-            if (!File.Exists(path + databaseName)) {
-                Console.WriteLine("Missing json file " + path + databaseName);
+            if (!File.Exists(databasePath)) {
+                Console.WriteLine("Missing json file " + databasePath);
                 missingFiles = true;
             }
-            if (!Directory.Exists(path + folderName)) {
-                Console.WriteLine("Missing directory " + path + folderName);
+            if (!Directory.Exists(folderPath)) {
+                Console.WriteLine("Missing directory " + folderPath);
                 missingFiles = true;
             }
             if (missingFiles) {
@@ -39,9 +37,9 @@ namespace ApexGuidTextureApp {
                 return;
             }
 
-            Dictionary<string, string> values = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(path + databaseName));
+            Dictionary<string, string> values = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(databasePath));
 
-            var files = Directory.EnumerateFiles(path + folderName).ToList();
+            var files = Directory.EnumerateFiles(folderPath).ToList();
             int count = files.Count();
 
             for (int i = 0; i < count; i++) {
