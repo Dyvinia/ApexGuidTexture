@@ -4058,7 +4058,7 @@
 
                                         <!-- CUSTOM ICON -->
 
-                                        <!--<Image HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,2,2,0" Height="26" Source="pack://application:,,,/ApexGuidTexturePreprocess;component/Resources/luzavatar_nio_icon.ico">
+                                        <!--<Image HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,2,2,0" Height="26" Source="pack://application:,,,/ApexGuidTexturePreprocess;component/Resources/icon.ico">
                                         </Image>-->
 
                                         <Grid Width="4"/>
