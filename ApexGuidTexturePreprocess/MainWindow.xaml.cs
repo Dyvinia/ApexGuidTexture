@@ -119,5 +119,10 @@ namespace ApexGuidTexturePreprocess {
             }
             ProcessRSON();
         }
+
+        protected override void OnClosed(EventArgs e) {
+            base.OnClosed(e);
+            Process.GetCurrentProcess().Kill();
+        }
     }
 }
