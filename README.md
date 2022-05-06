@@ -13,7 +13,7 @@ Extract the .zip and place the `ApexGuidTexture.exe` & `database.json` in the di
 Optional Commandline Arguments:
 
 1. `ApexGuidTexture.exe "custom folder path"`
-2. `ApexGuidTexture.exe "custom folder path" "custom database filepath"`
+2. `ApexGuidTexture.exe "custom folder path" "custom database.json filepath"`
 
 <details>
   <summary>
